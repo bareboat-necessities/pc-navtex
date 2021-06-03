@@ -1,7 +1,5 @@
-#!/usr/bin/make -f
+#!/bin/bash -e
 
-%:
-	dh $@
-
-override_dh_auto_install:
-	dh_auto_install --destdir=usr
+cd pc-navtex
+QT_SELECT=5 qmake
+make
