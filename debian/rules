@@ -2,5 +2,5 @@
 
 cd pc-navtex
 QT_SELECT=5 qmake
-make
+make || true
 cd ..
