@@ -9,8 +9,10 @@ The program PC NAVTEX is based on Qt.
 
 Compiling:
 
-cd pc-navtex
-qmake-qt5
+sudo apt install qt5-default libqt5serialport5-dev qt4-linguist-tools
+git clone https://github.com/bareboat-necessities/pc-navtex
+cd pc-navtex/pc-navtex
+QT_SELECT=5 qmake
 make
 
 
