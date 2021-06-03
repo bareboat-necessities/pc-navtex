@@ -1,17 +1,12 @@
 #!/usr/bin/make -f
 
+%:
+	dh $@
+
 clean:
 	true
 
 build:
 	cd pc-navtex; QT_SELECT=5 qmake; make; cd ..
 
-build-arch: build
 
-build-indep: build
-
-binary-arch: build-arch
-
-binary-indep: build-indep
-
-binary: binary-arch binary-indep
