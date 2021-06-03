@@ -3,8 +3,10 @@ Section: misc
 Priority: optional
 Maintainer: juerec <juerec@users.github.com>
 Build-Depends: debhelper (>=10~),
- qt5-default,
+ qtbase5-dev,
+ qtchooser,
  qt5-qmake,
+ qtbase5-dev-tools,
  libqt5serialport5-dev,
  qt4-linguist-tools,
  zlib1g-dev
