@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PC-NavTex
+GenericName=GUI for showing messages from NASA PC NAVTEX USB
+Exec=/usr/bin/pc-navtex
+Terminal=false
+Icon=gnome-globe
+Categories=Navigation
+Keywords=Navigation

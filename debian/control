@@ -1,0 +1,15 @@
+Source: pc-navtex
+Section: misc
+Priority: optional
+Maintainer: juerec <juerec@users.github.com>
+Build-Depends: debhelper (>=10~),
+ qt5-default,
+ libqt5serialport5-dev,
+ qt4-linguist-tools
+Standards-Version: 3.9.6
+Homepage: https://github.com/juerec/pc-navtex
+
+Package: pc-navtex
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: GUI for showing messages from NASA PC NAVTEX USB

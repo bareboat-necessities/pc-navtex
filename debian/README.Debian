@@ -1,0 +1,19 @@
+pc-navtex: GUI for showing messages from NASA PC NAVTEX USB
+Copyright 2020, juerec <juerec@users.github.com>
+Blurb:
+
+
+/*******************************************/
+
+PC NAVTEX
+
+/*******************************************/
+
+The program PC NAVTEX works together with the NAVTEX receiver "PC NAVTEX USB" from NASA.
+
+You can download, read and store messages received by this device.
+
+PC NAVTEX was tested under Linux systems, on PC and on Raspberry Pi.
+
+Other platforms possible too. The program is written using the Qt framework. There no platform specific features used.
+So, a port to Windows should be able without any changes.
