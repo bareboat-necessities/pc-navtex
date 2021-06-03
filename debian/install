@@ -1,2 +1,2 @@
-pc-navtex usr/bin
+pc-navtex/pc-navtex usr/bin
 debian/pc-navtex.desktop usr/share/applications
