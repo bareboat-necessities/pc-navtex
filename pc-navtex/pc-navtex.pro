@@ -73,8 +73,7 @@ LIBS    += -lz
 RESOURCES += pc-navtex.qrc
 
 
-TRANSLATIONS = pc-navtex_de.ts \
-               pc-navtex_en.ts
+TRANSLATIONS = pc-navtex_en.ts
 
 isEmpty(QMAKE_LRELEASE) {
 win32|os2:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\lrelease.exe
