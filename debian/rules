@@ -1,6 +1,13 @@
 #!/bin/bash -e
 
 cd pc-navtex
-QT_SELECT=5 qmake
-make || true
+
+if [ "clean" == $1 ]; then
+  make clean
+fi
+if [ "binary" == $1 ]; then
+  QT_SELECT=5 qmake
+  make || true
+fi
+
 cd ..
