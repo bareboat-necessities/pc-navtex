@@ -5,6 +5,9 @@ cd pc-navtex
 if [ "clean" == $1 ]; then
   true
 fi
+if [ "build" == $1 ]; then
+  true
+fi
 if [ "binary" == $1 ]; then
   QT_SELECT=5 qmake
   make || true
