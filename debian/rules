@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 clean:
-	cd pc-navtex; QT_SELECT=5 qmake; make clean; cd ..
+	true
 
 build:
 	cd pc-navtex; QT_SELECT=5 qmake; make; cd ..
