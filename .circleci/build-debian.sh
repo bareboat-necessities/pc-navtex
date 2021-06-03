@@ -29,7 +29,7 @@ DOCKER_CONTAINER_ID=$(docker ps --last 4 | grep $CONTAINER_DISTRO | awk '{print 
 docker exec --privileged -ti $DOCKER_CONTAINER_ID apt-get update
 docker exec --privileged -ti $DOCKER_CONTAINER_ID apt-get -y install dpkg-dev debhelper devscripts pkg-config apt-utils fakeroot
 docker exec --privileged -ti $DOCKER_CONTAINER_ID apt-get -y install dh-exec autotools-dev autoconf gzip
-docker exec --privileged -ti $DOCKER_CONTAINER_ID apt-get -y install zlib1g-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5serialport5-dev qt4-linguist-tools
+docker exec --privileged -ti $DOCKER_CONTAINER_ID apt-get -y install zlib1g-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5serialport5-dev
 docker exec --privileged -ti $DOCKER_CONTAINER_ID /bin/bash -xec \
     "update-alternatives --set fakeroot /usr/bin/fakeroot-tcp; cd ci-source; dpkg-buildpackage -b -uc -us -j4; mkdir dist; mv ../*.deb dist; chmod -R a+rw dist"
 
