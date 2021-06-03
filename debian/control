@@ -6,7 +6,7 @@ Build-Depends: debhelper (>=10~),
  qtbase5-dev,
  qtchooser,
  qt5-qmake,
- qtbase5-dev-tools,
+ qttools5-dev-tools,
  libqt5serialport5-dev,
  zlib1g-dev
 Standards-Version: 3.9.6
