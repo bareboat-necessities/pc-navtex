@@ -1,16 +1,19 @@
-#!/bin/bash -e
+#!/usr/bin/make -f
 
-cd pc-navtex
+clean:
+    cd pc-navtex; QT_SELECT=5 qmake
+    cd pc-navtex; make clean
 
-if [ "clean" == $1 ]; then
-  true
-fi
-if [ "build" == $1 ]; then
-  true
-fi
-if [ "binary" == $1 ]; then
-  QT_SELECT=5 qmake
-  make || true
-fi
+build:
+    cd pc-navtex; QT_SELECT=5 qmake
+    cd pc-navtex; make
 
-cd ..
+build-arch: build
+
+build-indep: build
+
+binary-arch: build-arch
+
+binary-indep: build-indep
+
+binary: binary-arch binary-indep
