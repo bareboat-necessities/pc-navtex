@@ -9,4 +9,5 @@ clean:
 build:
 	cd pc-navtex; QT_SELECT=5 qmake; make; cd ..
 
-
+override_dh_auto_install:
+	true
