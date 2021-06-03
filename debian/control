@@ -5,6 +5,7 @@ Maintainer: juerec <juerec@users.github.com>
 Build-Depends: debhelper (>=10~),
  qt5-default,
  qt5-qmake,
+ libqt5sql5,
  libqt5serialport5-dev,
  qt4-linguist-tools,
  zlib1g-dev
