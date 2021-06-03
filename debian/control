@@ -5,7 +5,8 @@ Maintainer: juerec <juerec@users.github.com>
 Build-Depends: debhelper (>=10~),
  qt5-default,
  libqt5serialport5-dev,
- qt4-linguist-tools
+ qt4-linguist-tools,
+ zlib1g-dev
 Standards-Version: 3.9.6
 Homepage: https://github.com/juerec/pc-navtex
 
