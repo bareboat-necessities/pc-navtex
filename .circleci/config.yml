@@ -5,8 +5,11 @@ orbs:
 executors:
   boot-linux:
     machine:
-      enabled: true
       resource_class: large
+      image: ubuntu-2004:2022.07.1
+  boot-linux-arm:
+    machine:
+      resource_class: arm.large
       image: ubuntu-2004:2022.07.1
 commands:
   git-checkout:
@@ -58,7 +61,7 @@ jobs:
     steps:
       - do-all
   build-debian-bullseye-arm64:
-    executor: boot-linux
+    executor: boot-linux-arm
     environment:
       - DOCKER_IMAGE=arm64v8/debian:bullseye
       - CONTAINER_DISTRO=debian:bullseye
@@ -68,7 +71,7 @@ jobs:
     steps:
       - do-all
   build-debian-bullseye-arm32:
-    executor: boot-linux
+    executor: boot-linux-arm
     environment:
       - DOCKER_IMAGE=arm32v7/debian:bullseye
       - CONTAINER_DISTRO=debian:bullseye
